@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | DINI Company</title>
+  <link rel="stylesheet" href="stylehome.css"> 
+  <link rel="stylesheet" href="stylecontato.css">
+  <link rel="icon" href="logodinicompany.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logodinicompany.jpeg" alt="Logo Dini Company">
+        </a>
+        <div class="logo-text">
+            <h1>DINI Company</h1>
+            <p>Consultoria e Mentoria Profissional</p> </div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Empresa</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li> </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contato">
+    <section class="contato-intro">
+      <h1>Entre em Contato</h1>
+      <p>Quer saber mais sobre nossas mentorias ou solicitar uma proposta? Preencha o formulário abaixo ou fale conosco pelos canais oficiais.</p>
+    </section>
+
+    <section class="contato-conteudo">
+      <div class="contato-form">
+        <form action="mailto:stella.dini@dinicompanyoficial.com?subject=Contato%20Site%20Dini%20Company" method="post" enctype="text/plain">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone">
+
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option value="mentoria">Mentoria Individual</option>
+            <option value="empresarial">Mentoria Empresarial</option>
+            <option value="treinamento">Treinamentos e Workshops</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+          <button type="submit" class="btn-solucoes">Enviar mensagem</button>
+        </form>
+      </div>
+
+      <div class="contato-info">
+        <h3>Informações de Contato</h3>
+        <p><i class="fa-solid fa-phone"></i> (11) 97872-2723</p>
+        <p><i class="fa-regular fa-clock"></i> Segunda a Sexta, das 14h às 20h</p>
+        <div class="redes-sociais">
+      <a href="https://www.instagram.com/dinicompanyoficial?igsh=MWY0bGpnNHZqamdzeQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      
+      <a href="https://www.linkedin.com/in/stella-dini/recent-activity/all/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      
+      </div>
+      </div>
+
+    </section>
+
+  <footer>
+    <p>© 2025 DINI Company. Todos os direitos reservados.</p>
+  </footer>
+
+ <a href="https://wa.me/5511978722723" class="whatsapp-float" target="_blank" title="Fale conosco pelo WhatsApp">
+        <img src="iconewhats.png" alt="Ícone do WhatsApp"> 
+    </a>
+
+</body>
+</html>

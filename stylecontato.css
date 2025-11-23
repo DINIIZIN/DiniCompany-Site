@@ -1,0 +1,172 @@
+/* --- ESTILO PÁGINA DE CONTATO --- */
+.contato {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Introdução */
+.contato-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contato-intro h1 {
+  color: #1D4ED8; /* cor da marca - AZUL UNIFICADO */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  
+}
+
+.contato-intro p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Conteúdo da seção (formulário + informações) */
+.contato-conteudo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Formulário */
+.contato-form {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contato-form input,
+.contato-form select,
+.contato-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.contato-form input:focus,
+.contato-form select:focus,
+.contato-form textarea:focus {
+  border-color: #1D4ED8; /* cor da marca - AZUL UNIFICADO */
+  outline: none;
+  box-shadow: 0 0 5px rgba(29, 78, 216, 0.3); /* cor da marca - AZUL UNIFICADO */
+}
+
+/* Botão de envio */
+.btn-solucoes {
+  background-color: #1D4ED8; /* cor da marca - AZUL UNIFICADO */
+  color: #fff;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-solucoes:hover {
+  background-color: #1a43ba; /* Tom mais escuro do azul */
+}
+
+/* Informações de contato */
+.contato-info {
+  flex: 1 1 40%;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contato-info h3 {
+  color: #1D4ED8; /* cor da marca - AZUL UNIFICADO */
+  margin-bottom: 1rem;
+}
+
+.contato-info p {
+  margin: 0.5rem 0;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contato-info i {
+  color: #1D4ED8; /* cor da marca - AZUL UNIFICADO */
+}
+
+/* Redes sociais */
+.redes-sociais {
+  margin-top: 1.5rem;
+}
+
+.redes-sociais a {
+  color: #1D4ED8; /* cor da marca - AZUL UNIFICADO */
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #1a43ba; /* Tom mais escuro do azul */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contato-conteudo {
+    flex-direction: column;
+  }
+
+  .contato-info, .contato-form {
+    flex: 1 1 100%;
+  }
+
+  .contato-info {
+    text-align: center;
+  }
+
+  .contato-info p {
+    justify-content: center;
+  }
+}
+
+/* --- ESTILO BOTÃO WHATSAPP FLUTUANTE (Novo) --- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px; /* Aumentado a margem */
+  right: 25px; /* Aumentado a margem */
+  width: 70px; /* Aumentado o tamanho */
+  height: 70px;
+  background-color: white; 
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra mais destacada */
+  z-index: 1000;
+  display: block; 
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); 
+}
+
+.whatsapp-float img {
+    width: 100%; /* Garante que a imagem preencha o container */
+    height: 100%;
+    border-radius: 50%; 
+    object-fit: cover;
+}

@@ -1,0 +1,85 @@
+/* --- ESTILO DA PÁGINA SOBRE (EMPRESA) --- */
+
+.sobre-empresa {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff; /* Fundo branco para se destacar */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05); /* Sutil sombra */
+}
+
+.sobre-empresa h1 {
+    color: #1D4ED8;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #E5E7EB; /* Linha de separação */
+}
+
+.sobre-empresa h2 {
+    color: #1D4ED8;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    /* Linha de destaque para subtítulos */
+    border-left: 5px solid #1D4ED8; 
+    padding-left: 15px;
+}
+
+.sobre-empresa p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* Estilo para os tópicos de valores (D.I.N.I.) */
+.sobre-empresa p:nth-of-type(odd) {
+    font-weight: 600;
+    color: #1D4ED8;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .sobre-empresa {
+        padding: 1rem;
+    }
+
+    .sobre-empresa h1 {
+        font-size: 2rem;
+    }
+
+    .sobre-empresa h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- ESTILO BOTÃO WHATSAPP FLUTUANTE (Novo) --- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px; /* Aumentado a margem */
+  right: 25px; /* Aumentado a margem */
+  width: 70px; /* Aumentado o tamanho */
+  height: 70px;
+  background-color: white; 
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra mais destacada */
+  z-index: 1000;
+  display: block; 
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); 
+}
+
+.whatsapp-float img {
+    width: 100%; /* Garante que a imagem preencha o container */
+    height: 100%;
+    border-radius: 50%; 
+    object-fit: cover;
+}

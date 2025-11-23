@@ -1,0 +1,816 @@
+/* --- RESET GERAL --- */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+
+  color: #333;
+
+  background-color: #fff;
+
+}
+
+
+
+/* --- CABEÇALHO --- */
+
+.header {
+
+  background-color: #fff;
+
+  border-bottom: 1px solid #e0e0e0;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+
+}
+
+
+
+.header-container {
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 30px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.logo {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+
+
+.logo img {
+
+  width: 100px;
+
+  height: 100px;
+
+  border-radius: 50%;
+
+}
+
+
+
+.logo-text h1 {
+
+  font-size: 1.4rem;
+
+  color: #1D4ED8;
+
+}
+
+
+
+.logo-text p {
+
+  font-size: 0.9rem;
+
+  color: #666;
+
+  margin-top: 3px;
+
+}
+
+
+
+/* Menu */
+
+.menu ul {
+
+  display: flex;
+
+  list-style: none;
+
+  gap: 25px;
+
+}
+
+
+
+.menu ul li a {
+
+  text-decoration: none;
+
+  color: #333;
+
+  font-weight: 500;
+
+  transition: color 0.3s;
+
+}
+
+
+
+.menu ul li a:hover,
+
+.menu ul li a.active {
+
+  color: #1D4ED8;
+
+}
+
+
+
+/* --- HERO / SEÇÃO INICIAL --- */
+
+.hero {
+
+  background: linear-gradient(white),
+
+              url("../img/fundo-dini.jpg") center/cover no-repeat;
+
+  color: #fff;
+
+  text-align: center;
+
+  padding: 150px 20px;
+
+}
+
+.img-home{
+
+    width: 300px;
+
+    max-width: 100%;
+
+    display: block;
+
+    margin: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+.hero-content {
+
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: black;
+
+}
+
+
+
+.hero h2 {
+
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+
+  font-weight: 600;
+
+}
+
+
+
+.hero p {
+
+  font-size: 1.1rem;
+
+  margin-bottom: 30px;
+
+  line-height: 1.6;
+
+}
+
+
+
+.btn {
+
+  background-color: #1D4ED8;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  padding: 12px 28px;
+
+  border-radius: 5px;
+
+  font-weight: 600;
+
+  transition: background 0.3s;
+
+}
+
+
+
+.btn:hover {
+
+  background-color: #1D4ED8;
+
+}
+
+
+
+/* --- RODAPÉ --- */
+
+footer {
+
+  background-color: #f7f7f7;
+
+  text-align: center;
+
+  padding: 20px;
+
+  color: #555;
+
+  font-size: 0.9rem;
+
+  border-top: 1px solid #e0e0e0;
+
+}
+
+
+
+/* --- RESPONSIVO --- */
+
+@media (max-width: 768px) {
+
+  .header-container {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 80px;
+
+  }
+
+
+
+  .menu ul {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+  }
+
+
+
+  .hero h2 {
+
+    font-size: 2rem;
+
+  }
+
+
+
+  .hero p {
+
+    font-size: 1rem;
+
+  }
+
+}
+
+
+
+/* --- Seção Mentoria --- */
+
+.mentoria {
+
+  text-align: center;
+
+  padding: 4rem 2rem;
+
+  background-color: #f9f9f9;
+
+}
+
+
+
+.mentoria h2 {
+
+  font-size: 2rem;
+
+  color: #1D4ED8;
+
+  margin-bottom: 1rem;
+
+}
+
+
+
+.mentoria .subtitulo {
+
+  color: #555;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 3rem;
+
+}
+
+
+
+.mentoria-cards {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 2rem;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+}
+
+.mentoria-cards img {
+  width: 100px; /* Aumentado o tamanho para 100px */
+  height: 100px; /* Aumentado o tamanho para 100px */
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+
+.mentoria-cards .card {
+
+  background: #fff;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  padding: 2rem 1.5rem;
+
+  width: 300px;
+
+  text-align: center;
+
+  transition: transform 0.3s;
+
+}
+
+
+
+.mentoria-cards .card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+
+
+.mentoria-cards img {
+
+  width: 70px;
+  height: 70px;
+  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+  margin-bottom: 1rem;
+
+}
+
+
+
+.mentoria-cards h3 {
+
+  color: #222;
+
+  margin-bottom: 0.5rem;
+
+}
+
+
+
+.mentoria-cards p {
+
+  color: #555;
+
+  font-size: 0.95rem;
+
+}
+
+
+
+.mentoria-cta {
+
+  margin-top: 3rem;
+
+}
+
+
+
+.botao-mentoria {
+
+  background-color: #1D4ED8;
+
+  color: white;
+
+  padding: 12px 25px;
+
+  border-radius: 25px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: background 0.3s;
+
+}
+
+
+
+.botao-mentoria:hover {
+
+  background-color: #1D4ED8;
+
+}
+
+
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+
+  .header-container {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+  }
+
+
+
+  .menu ul {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+  }
+
+
+
+  .hero h2 {
+
+    font-size: 2rem;
+
+  }
+
+
+
+  .hero p {
+
+    font-size: 1rem;
+
+  }
+
+}
+
+
+
+/* --- Seção Depoimentos --- */
+
+.depoimentos {
+
+  background-color: #ffffff;
+
+  padding: 4rem 2rem;
+
+  text-align: center;
+
+}
+
+
+
+.depoimentos h2 {
+
+  font-size: 2rem;
+
+  color: #1D4ED8;
+
+  margin-bottom: 1rem;
+
+}
+
+
+
+.depoimentos .subtitulo {
+
+  color: #8b8787;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 3rem;
+
+}
+
+
+
+.depoimentos-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 2rem;
+
+  flex-wrap: wrap;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+}
+
+
+
+.depoimento-card {
+
+  background: #f9f9f9;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  width: 300px;
+  height: 400px; /* Definindo altura fixa para o formato vertical (aproximadamente 3:5) */
+  max-width: 100%;
+  padding: 0; /* Remove o padding para que o vídeo ocupe toda a área */
+  transition: transform 0.3s;
+  overflow: hidden;
+
+}
+
+
+
+.depoimento-card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+/* Estilo para o vídeo dentro do card */
+.depoimento-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+
+  .depoimentos-container {
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+
+
+
+  .depoimento-card {
+
+    width: 90%;
+    height: 400px; /* Ajuste para telas menores */
+
+  }
+}
+
+/* Estilo do container do vídeo institucional */
+.video-container {
+    max-width: 300px;
+     margin: 3rem auto;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.video-container h3 {
+    color: #1D4ED8;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 700px; /* Limita a largura do vídeo para mobile/portrait */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* --- SEÇÃO NOSSAS SOLUÇÕES --- */
+.solucoes {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.solucoes h2 {
+  color: #222;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.solucoes p {
+  color: #555;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.cards-solucoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f8f8f8;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 1.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: #1D4ED8;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #1D4ED8;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.cards-solucoes .card img {
+  width: 100%; /* Largura máxima do card */
+  height: 200px; /* Altura fixa para uniformidade */
+  object-fit: cover; /* Recorta a imagem para preencher a área, mantendo a proporção */
+  border-radius: 5px; /* Borda leve para estética */
+  margin-bottom: 1rem;
+}
+
+.btn-solucoes {
+  display: inline-block;
+  background-color: #1D4ED8;
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-solucoes:hover {
+
+  background-color: #1D4ED8;
+}
+
+/* --- SEÇÃO RESULTADOS --- */
+.resultados {
+  background-color: #1D4ED8;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.resultados h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.metricas {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.box-metrica {
+  background: rgba(255,255,255,0.15);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  min-width: 180px;
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+.box-metrica:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.25);
+}
+
+.box-metrica h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.box-metrica p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+}
+
+/* --- ANIMAÇÕES --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .metricas {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+/* --- ESTILO BOTÃO WHATSAPP FLUTUANTE --- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px; /* Aumentado a margem */
+  right: 25px; /* Aumentado a margem */
+  width: 70px; /* AUMENTADO O TAMANHO DO BOTÃO */
+  height: 70px;
+  background-color: white; 
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra mais destacada */
+  z-index: 1000;
+  display: block; 
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); 
+}
+
+.whatsapp-float img {
+    width: 100%; /* Garante que a imagem preencha o container */
+    height: 100%;
+    border-radius: 50%; 
+    object-fit: cover;
+}
